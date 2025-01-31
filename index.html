@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Mato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="try.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="loadar">
+            <div class="loadar-1 bar"></div>
+            <div class="loadar-2 bar"></div>
+        </div>
+         <div class="counter">
+            <div class="counter-1 digit">
+                <div class="num">0</div>
+                <div class="num">1</div>
+            </div>
+            <div class="counter-2 digit"></div>
+            <div class="counter-3 digit">
+                <div class="num">0</div>
+                <div class="num">1</div>
+                <div class="num">2</div>
+                <div class="num">3</div>
+                <div class="num">4</div>
+                <div class="num">5</div>
+                <div class="num">6</div>
+                <div class="num">7</div>
+                <div class="num">8</div>
+                <div class="num">9</div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="nav">
+        <div class="logo">Deepak Mato</div>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">About Us</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+        </ul>
+        <div class="nav__social">
+            <a href="https://www.instagram.com/" target="blank" class="nav_social-link"><i
+                    class="ri-instagram-line"></i></a>
+            <a href="https://github.com/" target="blank" class="nav_social-link"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/" target="blank" class="nav_social-link"><i
+                    class="ri-linkedin-box-line"></i></a>
+        </div>
+    </header>
+    <div class="filter-container">
+        <select id="category-filter">
+            <option value="">Select Category</option>
+            <option value="Seafood">Seafood</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+    
+        <select id="area-filter">
+            <option value="">Select Cuisine</option>
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Indian">Indian</option>
+        </select>
+    
+        <button onclick="fetchByCategory()">Filter</button>
+    </div>
+    
+    <div id="recipes"></div>
+    
+    <video autoplay muted loop id="background-video">
+        <source src="https://cdn.pixabay.com/video/2016/06/27/3625-172488382_tiny.mp4" type="video/mp4">
+    </video>
+
+    <div class="searchBox">
+        <input class="searchInput" type="text" placeholder="Enter the recipe name...">
+        <button class="searchButton"><i class="ri-search-line"></i></button>
+    </div>
+    <div class="result-box"></div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/52345432-5432543-5435-435545434/webchat/v2/config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
